@@ -24,7 +24,7 @@ class App extends Component {
     return shuffle(result)
   }
 
-  handleCardClick(card) {
+  handleCardClick = (card) => {
     console.log(card, 'clicked')
   }
 
