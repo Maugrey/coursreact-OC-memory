@@ -40,8 +40,13 @@ class App extends Component {
   // Arrow fx for binding
   handleCardClick = index => {
     const { currentPair } = this.state
-
+console.log(currentPair, index)
     if (currentPair.length === 2) {
+      return
+    }
+
+    // the same card is selected => do nothing
+    if (currentPair.length === 1 && currentPair[0] === index) {
       return
     }
 
